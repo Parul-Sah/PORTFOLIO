@@ -1,0 +1,249 @@
+.z {
+    border: 0 solid black;
+    border-radius: 25px 50px;
+    text-decoration: none !important;
+    color: white !important;
+    margin: 4px;
+}
+
+#name {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+a:hover {
+    font-weight: bolder;
+    background-color: darkgrey !important;
+}
+
+a:active {
+    margin: 0px;
+    font-size: 27px;
+}
+
+.container {
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.nav {
+    top: 0;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    background-color: black;
+    font-family: 'Cambo', serif;
+    z-index: 10;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-family: 'Cabin Sketch', cursive;
+}
+
+#education,
+#workshop {
+    font-size: 20px;
+    text-align: center;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+#skills {
+    text-align: center;
+    font-size: 20px;
+}
+
+#contact {
+    text-align: center;
+    font-size: 20px;
+}
+
+.main {
+    position: absolute;
+    top: 50px;
+    overflow-y: auto;
+    width: 100%;
+    background-color: darkcyan;
+    z-index: 0;
+}
+
+.a {
+    text-align: center;
+    font-family: 'Lateef', cursive;
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+}
+
+#btn {
+    display: none;
+}
+
+@media (min-width: 480px) and (max-width: 770px) {
+
+    .nav {
+        font-size: 20px;
+        left: -1000px;
+        height: 60px;
+    }
+
+    .container {
+        top: 0;
+    }
+
+    .main {
+        top: 0px;
+    }
+
+    #name {
+        font-size: 30px;
+    }
+
+    #btn {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 20;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .nav {
+        left: -1000px;
+        top: 0;
+    }
+
+    .main {
+        background-color: darkcyan;
+        top: 0;
+    }
+
+    #name {
+        font-size: 25px;
+    }
+
+    #btn {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 20;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 360px) {
+
+    .nav {
+        font-size: 20px;
+        left: -1000px;
+        height: 100px;
+        top: 0;
+    }
+
+    .main {
+        background-color: darkcyan;
+        top: 0px;
+    }
+
+    .container {
+        position: relative;
+        top: 0px;
+    }
+
+    #name {
+        font-size: 30px;
+    }
+
+    #btn {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 20;
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 770px) {
+
+    .nav {
+        font-size: 20px;
+        height: 50px;
+        width: 100%;
+        left: 0;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        top: 50px;
+    }
+
+    #about {
+        height: 48%;
+        display: inline-block;
+        width: 48%;
+    }
+
+    #education {
+        height: 48%;
+        display: inline-block;
+        width: 48%;
+    }
+
+    #workshop {
+        height: 48%;
+        display: inline-block;
+        width: 48%;
+    }
+
+    #skills {
+        height: 48%;
+        display: inline-block;
+        width: 48%;
+    }
+
+    #contact {
+        display: inline-block;
+        width: 100%;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
